@@ -15,14 +15,17 @@ email = input()
 while len(email) < 5:
     print('Enter your email address')
     email = input()
-password = input('Enter yes or no: ')
-if password == "yes":
-    password = firstName[0:2] + lastName[2:]
-elif password == "no":
-    password = input()
+print('do you want to use ' + firstName[0:2] + lastName[2:] + ' as password?')
+answer = input('Enter yes or no: ')
+if answer == "yes":
+    password = (firstName[0:2] + lastName[2:])
+    print("Your password is saved in the secured backend as *******")
+elif answer == "no":
+
+    print('Enter your password')
+password = input()
 while len(password) < 7:
     print('Enter your password')
     password = input()
-print('do you want to use' + firstName[0:2] + lastName[2:] + 'as password')
 Container = firstName + lastName + email + password
-print("Your User details is" + Container)
+print("Your User details is " + Container + " and is now saved in our database")
