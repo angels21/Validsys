@@ -2,22 +2,22 @@ import random
 import string
 import uuid
 
-print('Enter your First Name at least two characters')
+print('Please enter a minimum of two characters (A-Z) as your First Name')
 firstName = input()
 while len(firstName) < 2:
-    print('Enter your First Name at least two characters')
+    print('Entry does not meet requirement, re-enter a minimum of two characters (A-Z) as your First Name')
     firstName = input()
 
-print('Enter your Last Name at least two characters')
+print('Please enter a minimum of two characters (A-Z) as your Last Name')
 lastName = input()
 while len(firstName) < 2:
-    print('Enter your Last Name at least two characters')
+    print('Entry does not meet requirement, re-enter a minimum of two characters (A-Z) as your Last Name')
     lastName = input()
 
-print('Enter your email address at least 5 characters')
+print('Please enter a minimum of five characters (a-z) as your email address')
 email = input()
 while len(email) < 5:
-    print('Enter your email address at least 5 characters')
+    print('Entry does not meet requirement, re-enter a minimum of five characters (a-z) as your email address')
     email = input()
 
 id = uuid.uuid1()
